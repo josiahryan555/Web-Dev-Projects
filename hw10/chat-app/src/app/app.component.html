@@ -1,0 +1,32 @@
+<div class="sticky-header">
+  <h1>Chat App</h1>
+  <div class="input-container">
+    <span class="label-input">
+      <label>Enter Your User Handle here: </label>
+      <input type="text" [(ngModel)]="userName">
+    </span>
+
+    <span class="label-input">
+      <label>Pick a color for your posts: </label>
+      <!-- TODO: add color picker -->
+    </span>
+  </div>
+</div>
+
+<ul class="message-container" *ngFor="let message of messages">
+  <p>{{message.user}} {{message.message}}</p>
+</ul>
+<!-- use ngfor -->
+
+<div id="message-writer">
+  <label>Enter Message: </label>
+  <input type="text" [(ngModel)]="message" (keyup.enter)="submitMessage()">
+</div>
+
+<!-- TODO -->
+
+<!-- Think about what i want to prioritize -->
+<!-- color picker -->
+<!-- local storage -->
+<!-- firebase -->
+<!-- `npm install -g firebase-tools` is not working  -->

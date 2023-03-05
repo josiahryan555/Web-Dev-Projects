@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- name: Josiah Ryan, id: 2561516, date: 9/26/22 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hint</title>
+</head>
+
+<body>
+    <h1> Welcome to my Website </h1>
+    <br>
+    <div>
+        <label>Password: </label>
+        <input>
+    </div>
+    <br> <br> <br>
+    <div>
+        <!-- button that opens and closes hint
+             the text in the button changes on click -->
+        <button id="password-hint-button" onclick="openOrCloseHint()">Click for a Hint</button>
+    </div>
+    <p id="hint"></p>
+
+    <script>
+        let showHint = false;
+
+        // Opens a hidden hint paragraph and changes the button's text
+        function openHint(text) {
+            document.getElementById("password-hint-button").innerHTML = "Click to Close Hint";
+            document.getElementById("hint").innerHTML = text;
+        }
+        // Closes the hint paragraph and changes the button's text
+        function closeHint() {
+            document.getElementById("password-hint-button").innerHTML = "Click for a Hint";
+            document.getElementById("hint").innerHTML = "";
+        }
+        // Opens the hidden text if it is not visible, and hides it if it is visible
+        function openOrCloseHint() {
+            showHint = !showHint;
+            if (showHint) {
+                openHint("Password: 123abc");
+            } else {
+                closeHint();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

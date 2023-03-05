@@ -1,0 +1,23 @@
+.sticky-header {
+    background-color: lightgrey;
+    position: sticky;
+    top: 0;
+}
+
+.input-container {
+    display: inline;
+}
+
+.label-input {
+    padding-left: 20px;
+}
+
+.message-container {
+    padding: 0px;
+    margin: 0px;
+}
+
+.message-container p {
+    padding: 2px;
+    margin: 0px;
+}

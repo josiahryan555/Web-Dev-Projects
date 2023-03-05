@@ -1,0 +1,53 @@
+* {
+    /* border: 1px solid red; */
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+/* container for title, subtitle, and button */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 15vw;
+    max-height: 10vh;
+    padding-left: 0.8vw;
+}
+
+.logo-div {
+    max-width: 10vw;
+    max-height: 10vh;
+}
+
+.logo-div img {
+    max-width: 10vw;
+    max-height: 10vh;
+    border-radius: 8px;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 1.7vw;
+}
+
+.subtitle {
+    font-size: 1.5vw;
+    color: grey;
+}
+
+.find-more-btn {
+    background-color: green;
+    color: white;
+    font-size: 1.7vw;
+    border: 1px;
+    white-space: nowrap;
+    border-radius: 8px;
+}
+
+/* currently applied only to button */
+.shadowed {
+    box-shadow: 2px 2px grey;
+}

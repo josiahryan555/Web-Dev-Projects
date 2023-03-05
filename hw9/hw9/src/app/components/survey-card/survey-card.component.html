@@ -1,0 +1,12 @@
+<mat-card>
+    <div id="iconAndTitle">
+        <mat-card-title>{{question}}</mat-card-title>
+        <mat-icon>question_answer</mat-icon>
+    </div>
+
+    <mat-card-subtitle>Choose your best answer, from {{minValue}} to {{maxValue}} {{units}}.</mat-card-subtitle>
+    <mat-card-actions>
+        <mat-slider min={{minValue}} max={{maxValue}} step="1" value={{minValue}} (change)="sliderChanged($event)">
+        </mat-slider>
+    </mat-card-actions>
+</mat-card>

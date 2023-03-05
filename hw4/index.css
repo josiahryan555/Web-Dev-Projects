@@ -1,0 +1,22 @@
+/* .word-character-counter {
+    display: inline;
+} */
+
+.counter-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+}
+
+.counter-container>p {
+    padding-right: 5px;
+}
+
+.counter-and-button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    max-width: 200px;
+}

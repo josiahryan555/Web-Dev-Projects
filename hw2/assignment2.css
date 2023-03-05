@@ -1,0 +1,87 @@
+/* Sets the font family, size (scales with window size), and centers text.
+   This is applied to all text in the body of the code. */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5vh;
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* Removes padding at start of the menu list*/
+ul {
+    padding-inline-start: 0px;
+}
+
+/* Contains the logo and search bar.
+   Sets display to grid, creates 3 columns, sets height */
+.logo-search-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 132px;
+
+}
+
+/* Centers the Calvin logo in the middle of the window */
+.logo {
+    grid-column: 2/3;
+}
+
+/* Search bar container.
+   Sets search bar between calvin logo and right side of window and centers the search box inside it*/
+.search-bar-container {
+    grid-column: 3/3;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search Bar styling: background, size, border/margin, font size,  */
+.search-input {
+    background: none repeat scroll 0% 0% #E0E0E0;
+    border-radius: 3px;
+    border: none;
+    font-size: 13px;
+    height: 29px;
+    min-height: 29px;
+    line-height: 19px;
+    margin: 10px 0 0 0;
+}
+
+/* Container for menu Items.
+   Sets background color, height, and centers items putting space between items */
+.menu-bar {
+    background-color: #97252b;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Containers for list items used inside the menu-bar container.
+   Sets text color to white, centers text, and removes list bullet point*/
+.menu-item {
+    color: white;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Styling for hovering over the menu items.  Changes color, cursor, and underlines text */
+.menu-item:hover {
+    color: lightyellow;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Styling for the text below the menu bar.
+   Makes text big, and creates space between this text and the above logo, menu */
+.below-menu-bar-text {
+    padding-top: 12%;
+    font-size: 35px;
+    line-height: 39px;
+}

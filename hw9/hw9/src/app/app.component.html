@@ -1,0 +1,13 @@
+<app-survey-card [question]="question1" [minValue]="min1" [maxValue]="max1" [units]="unit1"
+    (result)="gotResult($event)"></app-survey-card>
+<app-survey-card [question]="question2" [minValue]="min2" [maxValue]="max2" (result)="gotResult($event)">
+</app-survey-card>
+<app-survey-card [question]="question3" [minValue]="min3" [maxValue]="max3" [units]="unit3"
+    (result)="gotResult($event)"></app-survey-card>
+
+<!-- shows results -->
+<div id="results">
+    <p>Question 1 selection: {{question1Value}}</p>
+    <p>Question 2 selection: {{question2Value}}</p>
+    <p>Question 3 selection: {{question3Value}}</p>
+</div>

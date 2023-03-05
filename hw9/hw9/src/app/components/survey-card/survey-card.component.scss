@@ -1,0 +1,45 @@
+mat-card {
+    border-radius: 10px;
+    border-color: blue;
+    border-width: 1px;
+    margin: 1vmin;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    min-width: 190px;
+    max-height: .2vh;
+    min-height: 120px;
+    background-color: lightyellow;
+}
+
+mat-slider {
+    border-radius: 1vmin;
+    width: 100%;
+    padding: 2px;
+    max-height: 30px;
+
+}
+
+mat-card-title {
+    font-size: 3.4vmin;
+    padding-top: .5vh;
+}
+
+mat-card-subtitle {
+    font-size: 2.5vmin;
+    margin-bottom: .2vh;
+    // padding-top: 10px;
+}
+
+// force the icon to always be in the upper-left or upper-right corner of your component. (Mine is shown in the upper-right.) Try to get this working on your own, but if you have problems, you can look at the very bottom of this assignment for a solution, which took me hours to figure out (and with help from stackoverflow).
+// professor Norman's solution:
+mat-icon {
+    margin-left: auto;
+}
+
+// puts the title and the icon on the same top row
+#iconAndTitle {
+    display: flex;
+    flex-direction: row;
+}
